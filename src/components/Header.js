@@ -4,13 +4,13 @@ import logo from "../img/stats/logo.png";
 function Header() {
 
 
-    const [contacts, setContacts] = useState([])
+    const [branches, setBranches] = useState([])
     const [socials, setSocials] = useState([])
 
     useEffect(() => {
         fetch("https://mproweb.uz/YTless/evacore/api/?page=home")
             .then(result => result.json())
-            .then(result => setContacts(result.res.data.contacts))
+            .then(result => setBranches(result.res.data.branches))
 
         fetch("https://mproweb.uz/YTless/evacore/api/?page=home")
             .then(result => result.json())
@@ -98,8 +98,8 @@ function Header() {
                                 </button>
 
                                 <ul className="dropdown-menu dropdown__menu">
-                                    {contacts.map((item, index) => (
-                                        <li key={index}><a className="dropdown-item" href="#"> <span>{item.phone}</span> <span>{item.adress}</span> </a></li>
+                                    {branches.map((item, index) => (
+                                        <li key={index}><a className="dropdown-item" href="#"> <span>{item.name}</span> <span>{item.phone}</span> </a></li>
                                     ))}
                                 </ul>
                             </div>
