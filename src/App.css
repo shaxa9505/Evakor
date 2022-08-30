@@ -1,4 +1,473 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+
+/* ============= HEADER START ========== */
+
+.sub__header{
+    background-color: #FF7E00;
+}
+
+.sub__header_ul{
+    gap: 20px;
+}
+
+.sub__header_li{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    transition: all 0.3s linear;
+    color: #FFFFFF;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+}
+
+.social__icons{
+    color: #FFFFFF;
+}
+
+.main__header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.header__right_side{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 40px   ;
+}
+
+.profile__and_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px   ;
+}
+
+.logo{
+    width: 132px;
+    height: 52;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.search{
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+}
+
+.search__input{
+    max-width: 450px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 16px;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #222222;
+    border: 1px solid #FF7E00    ;
+}
+
+.input__btn{
+    border-radius: 50px;
+    background-color: #FF7E00;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    display: flex;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    border: 0;
+}
+
+.input__btn:hover{
+    background-color: #FF7E00;
+    border: 0;
+}
+
+.dropdown-toggle::after{
+    display: none   ;
+}
+
+.dropdown__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF7E00;
+    border-radius: 50px;
+    padding-right: 45px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+.dropdown__button:hover{
+    border: 1px solid #FF7E00;
+}
+
+.dropdown__menu .dropdown-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown__menu .dropdown-item:hover{
+    background-color: #ffc68c;
+}
+
+.dropdown__icon{
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #FF7E00;
+    padding: 11px 9px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.profile__blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile__blocks p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+    margin-top: 4px;
+}
+
+.sub__header_li:hover{
+    color: #FF7E00;
+    transition: all 0.3s linear;
+}
+
+.dropdown__button:active,
+.dropdown__button:focus,
+.dropdown__button:focus-visible,
+.search__input:active,
+.search__input:focus,
+.search__input:focus-visible{
+    border: 1px solid #FF7E00 !important;
+    outline: 0;
+}
+
+
+/* ============= HEADER END ========== */
+
+/*========== BANNER START ========= */
+
+.banner{
+    background-image: url("../src/img/stats/banner_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px 0;
+} 
+
+.banner__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px 0;
+}
+
+.banner__information h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+.banner__ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner__i{
+    color: #FFFFFF;
+    width: 40px;
+    display: flex;
+    padding: 11px 12px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.banner__p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF; 
+}
+
+.banner__ul li{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/*========== BANNER END ========= */
+
+
+
+/* ================ MENU START ================= */
+
+menu {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+menu h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+menu h2::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    background: #FF7E00;
+    border-radius: 25px;
+    margin: auto;
+}
+
+menu .img1, 
+menu .img2,
+menu .img{
+    width: 100%;
+    height: auto;
+}
+menu .img2{
+    margin-bottom: 30px;
+}
+menu .menu_link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+menu .menu_link::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FF7E00;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -2px;
+}
+menu .menu_link i{
+    margin-left: 10px;
+}
+menu .menu_bottom{
+    background: #FF7E00;
+    margin-top: 100px;
+}
+menu .menu_bottom .block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+menu .menu_bottom .block i{
+    color: #FFFFFF;
+    font-size: 27px;
+}
+menu .menu_bottom .block .right{
+    margin-left: 20px;
+}
+menu .menu_bottom .block .right p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+}
+menu .menu_bottom .block .right span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+/* ================ MENU END ================= */
+
+
+
+
+
+/* ================ class BRAND START ================= */
+
+.brands {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.brands h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.brands h2::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    background: #FF7E00;
+    border-radius: 25px;
+    margin: auto;
+}
+.brands .block {
+    border: 1px solid #CFCFCF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    height: 190px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    transition: 500ms;
+}
+.brands .block:hover{
+    border: 1px solid #FF7E00;
+}
+.brands .block p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.brands .block p::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #FF7E00;
+    border-radius: 25px;
+    margin: 20px auto 10px;
+}
+.brands .brands_link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 15px;
+    margin-right: 40px;
+    position: relative;
+}
+.brands .brands_link::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FF7E00;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -2px;
+}
+.brands .brands_link i{
+    margin-left: 10px;
+}
+
+
+
+/* ================ class BRAND END ================= */
+
+
+
+
 /* =================== MAIN START ================= */
+
 
 main h2{
     font-weight: 500;

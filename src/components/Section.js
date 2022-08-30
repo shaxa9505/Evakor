@@ -7,8 +7,8 @@ function Section(props) {
         <section>
             <h2>Видео</h2>
             <div className="container">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
+                <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
+                    <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -17,14 +17,14 @@ function Section(props) {
                         <div className="carousel-item active">
                             <div className="row">
                                 <div className="col-xxl-6">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <div>
                                         <h5>Выставка BMW!</h5>
                                         <p>Описание</p>
                                     </div>
                                 </div>
                                 <div className="col-xxl-6">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <div>
                                         <h5>Апгрейд Nexia 3!</h5>
                                         <p>Описание</p>
@@ -35,14 +35,14 @@ function Section(props) {
                         <div className="carousel-item">
                             <div className="row">
                                 <div className="col-xxl-6">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <div>
                                         <h5>Выставка BMW!</h5>
                                         <p>Описание</p>
                                     </div>
                                 </div>
                                 <div className="col-xxl-6">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <div>
                                         <h5>Апгрейд Nexia 3!</h5>
                                         <p>Описание</p>
@@ -53,14 +53,14 @@ function Section(props) {
                         <div className="carousel-item">
                             <div className="row">
                                 <div className="col-xxl-6">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <div>
                                         <h5>Выставка BMW!</h5>
                                         <p>Описание</p>
                                     </div>
                                 </div>
                                 <div className="col-xxl-6">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lpOCbF2dlG0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <div>
                                         <h5>Апгрейд Nexia 3!</h5>
                                         <p>Описание</p>
