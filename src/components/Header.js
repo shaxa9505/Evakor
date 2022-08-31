@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import logo from "../img/stats/logo.png";
+import {Link} from "react-router-dom"
 
 function Header() {
-
 
     const [branches, setBranches] = useState([])
     const [socials, setSocials] = useState([])
@@ -17,6 +17,7 @@ function Header() {
             .then(result => setSocials(result.res.data.socials))
     }, [])
 
+
     return (
         <header>
             <div className="sub__header">
@@ -27,7 +28,7 @@ function Header() {
                                 <div className="collapse navbar-collapse" id="navbarNav">
                                     <ul className="navbar-nav sub__header_ul">
                                         <li className="nav-item">
-                                            <a className="sub__header_li" href="#">О продукции</a>
+                                            <Link className="sub__header_li" to="/products">О продукции</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a className=" sub__header_li" href="#">Автоковрики</a>
@@ -56,11 +57,11 @@ function Header() {
                         </nav>
 
                         <div className="social col-4">
-                        {socials.map((item, index) => (
-                            <a href={item.link} key={index}>
-                                <i className={`${item.fa_icon} social__icons`}></i>
-                            </a>
-                        ))}
+                            {socials.map((item, index) => (
+                                <a href={item.link} key={index}>
+                                    <i className={`${item.fa_icon} social__icons`}></i>
+                                </a>
+                            ))}
                         </div>
                     </div>
 
@@ -71,9 +72,9 @@ function Header() {
                 <div className="container">
                     <div className="main__header_inner">
                         <div className="logo">
-                            <a href="/">
+                            <Link to="/">
                                 <img src={logo} alt="" />
-                            </a>
+                            </Link>
                         </div>
 
 
@@ -158,8 +159,6 @@ function Header() {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>

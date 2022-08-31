@@ -1,20 +1,17 @@
-import Banner from "./components/Banner";
-import Brands from "./components/Brands";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Main from "./components/Main";
-import Menu from "./components/Menu";
-import Section from "./components/Section";
+import { Routes, Route } from "react-router-dom"
+import Home from "./Pages/Home";
+import Products from "./Pages/Products";
 
 function App() {
   return (
     <div>
       <Header />
-      <Banner />
-      <Menu />
-      <Brands />
-      <Main />
-      <Section />
+          <Routes>
+            <Route path="/products" element={<Products />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
       <Footer />
     </div>
   );
