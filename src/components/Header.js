@@ -31,7 +31,7 @@ function Header() {
                                             <Link className="sub__header_li" to="/products">О продукции</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className=" sub__header_li" href="#">Автоковрики</a>
+                                            <Link className=" sub__header_li" to="/marks">Автоковрики</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a className=" sub__header_li" href="#">Галерея</a>
