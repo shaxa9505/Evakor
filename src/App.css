@@ -891,7 +891,7 @@ footer .yel{
 /* =================  INFOEVAKOR END =============== */
 
 
-/* =============== MARKS =============== */
+/* =============== MARKS START =============== */
 
 .marks{
     height: 860px;
@@ -940,6 +940,7 @@ footer .yel{
     margin-bottom: 30px;
     padding-top: 25px;
     transition: 500ms;
+    width: 100%
 }
 .marks .block:hover{
     border: 1px solid #FF7E00;
@@ -966,6 +967,44 @@ footer .yel{
     border-radius: 25px;
     margin: 20px auto 10px;
 }
+
+
+/* ================= MARKS START ================== */
+
+
+
+/* ================= MARKS2 START ================== */
+
+
+.marks2{
+    height: 860px;
+    margin-top: 20px;
+}
+.marks2 h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.marks2 h2::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    background: #FF7E00;
+    border-radius: 25px;
+    margin: auto;
+}
+
+
+
+
+/* ================= MARKS2 END ================== */
+
+
 
 
 /* ============= DELIVERY START ========== */

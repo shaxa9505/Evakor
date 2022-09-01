@@ -7,6 +7,7 @@ import Marks from "./Pages/Marks";
 import Contact from "./Pages/Contact";
 import Delivery from "./Pages/Delivery";
 import Return from "./Pages/Return";
+import Marks2 from "./Pages/Marks2";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/return" element={<Return />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/marks2/:id" element={<Marks2 />} />
           </Routes>
       <Footer />
     </div>
