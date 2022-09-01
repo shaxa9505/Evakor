@@ -17,7 +17,7 @@ function Brands(props) {
                 <div className="row">
                     {brands.map((item, index) => (
                         <div className="col-xxl-2">
-                            <div className="block">
+                            <div key={index} className="block">
                                 <img src={item.icon} alt="png" />
                                 <p>{item.brand_name}</p>
                             </div>

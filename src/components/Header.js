@@ -34,22 +34,22 @@ function Header() {
                                             <Link className=" sub__header_li" to="/marks">Автоковрики</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className=" sub__header_li" href="#">Галерея</a>
+                                            <Link className=" sub__header_li" to="/galery">Галерея</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className=" sub__header_li" href="#">Доставка и оплата</a>
+                                            <Link className=" sub__header_li" to="/delivery">Доставка и оплата</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a className=" sub__header_li" href="#">Статус заказа</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className=" sub__header_li" href="#">Возврат</a>
+                                            <Link className=" sub__header_li" to="/return">Возврат</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a className=" sub__header_li" href="#">Акции</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className=" sub__header_li" href="#">Контакты</a>
+                                            <Link className=" sub__header_li" to="/contact">Контакты</Link>
                                         </li>
                                     </ul>
                                 </div>

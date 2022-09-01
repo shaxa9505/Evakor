@@ -73,6 +73,7 @@ function Comments() {
 
     return (
         <section className="comment__slider">
+            <h2>Отзывы</h2>
             <Slider  {...settings}>
                 {comments.map((item, index) => (
                     <div className="card" key={index}>
@@ -93,8 +94,8 @@ function Comments() {
                             </div>
                             <div className="card__bottom">
                                 <Slider {...settings2}>
-                                    {item.gallery.map(img => (
-                                        <div className="card__gallery">
+                                    {item.gallery.map((img, index) => (
+                                        <div key={index} className="card__gallery">
                                             <img src={img} alt="" />
                                         </div>
                                     ))}
